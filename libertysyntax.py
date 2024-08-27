@@ -64,10 +64,10 @@ if __name__ == '__main__':
                         model=args.model_name,
                         tokenizer=tokenizer,
                         streamer=streamer,
-                        token="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")
+                        token="")
 
     else:
-        model = pipeline('text-generation', model=args.model_name, token="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")
+        model = pipeline('text-generation', model=args.model_name, token="")
     
 
     code_to_traduce = open(args.file_name, "r").read()

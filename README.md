@@ -1,7 +1,7 @@
 # LibertySyntax
 How to code without syntax. No syntax, no keywords, and no specific signs, just logistics and LLM.
 
-# Installation as a library
+## Installation as a library
 Install it.
 ```python
 pip install git+https://github.com/styalai/LibertySyntax
@@ -21,7 +21,7 @@ code = traduce(model, code_to_traduce)
 exec(code)
 ```
 
-# Installation as a CLI
+## Installation as a CLI
 Install it.
 ```python
 git clone https://github.com/styalai/LibertySyntax

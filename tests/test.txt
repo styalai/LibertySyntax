@@ -1,4 +1,0 @@
-x <- 3
-display x + 5
-x -> x-2 if x superior 0
-print x

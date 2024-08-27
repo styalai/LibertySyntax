@@ -3,6 +3,10 @@ import argparse
 import os
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, TextStreamer
 
+def download_model(model_name="Arthur-LAGACHERIE/gemma-2-9b-it-4bits"):
+    model = pipeline('text-generation', model=model_name)
+    return model
+
 def traduce(pipe, code, device="cuda"):
     code_traduced = ""
     
@@ -57,7 +61,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.stream == "True":
-        tokenizer = AutoTokenizer.from_pretrained(args.model_name, token="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")
+        tokenizer = AutoTokenizer.from_pretrained(args.model_name, token="")
         streamer = TextStreamer(tokenizer, skip_prompt=True)
 
         model = pipeline('text-generation', 
